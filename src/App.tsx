@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import React, {Component, PropsWithChildren} from "react";
-import { jsPDF } from "jspdf";
+//import React, {Component, PropsWithChildren} from "react";
+//import { jsPDF } from "jspdf";
 import InputField from "./components/inputField"
 import TextField from  "./components/textField"
 
@@ -13,7 +13,7 @@ import TextField from  "./components/textField"
 
 function App() {
   const [Text, setText] = useState("")
-  const doc = new jsPDF();
+  //const doc = new jsPDF();
 
 function  getData(val:string){
   setText(val);
