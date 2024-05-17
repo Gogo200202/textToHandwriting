@@ -2,14 +2,17 @@
 
 function TextField(prop:any) {
    // const [Text, setText] = useState("");
+      //console.log(prop.Text);
+  
 
- 
     return (
-      <div className=" fixed top-0 right-0">
-       <div className="bg-[#BCB496] ">
+      <>
+       <br/>
+       <p  className="bg-[#BCB496] whitespace-pre font-lumanosimo ">
        {prop.Text}
-       </div>
-      </div>
+       </p>
+       
+      </>
     )
   }
   
