@@ -1,35 +1,18 @@
 import { useState } from "react"
 import jsPDF from "jspdf";
+import './GochiHand-Regular-normal'
 function InputField(prop:any) {
     const [Text, setText] = useState("");
     const [charecterCount, setCharecterCount] = useState(0);
 
     function Change(event:React.ChangeEvent<HTMLTextAreaElement>){
       
-      
   
-        let numberOfwordPerLine=56;
-        let numberOfBraks:number=Math.floor(event.target.value.length/numberOfwordPerLine);
-        
-        let whereToSplit=numberOfwordPerLine;
-         let newArr:string[]=event.target.value.split("");
-         setCharecterCount(newArr.length);
+         setCharecterCount(event.target.value.length);
          if(charecterCount<=2520){
-    
-        if(numberOfBraks>0){
-          
-          
-         for (let index = 0; index < numberOfBraks; index++) {
-            
-               newArr.splice(whereToSplit+index, 0, '\n');
-              
-           whereToSplit+=numberOfwordPerLine;
-          } 
   
-          
-        }
        
-        setText(newArr.join(''));
+        setText(event.target.value);
       }
   
     }
@@ -37,8 +20,15 @@ function InputField(prop:any) {
 
    
   function saveToPDF(){
+    
+
+    
       let pdf=new jsPDF();
+           
+      pdf.setFont('GochiHand-Regular');
+
       pdf.text(Text,10,10);
+       console.log(pdf.getFontList())
       pdf.save();
 
   }

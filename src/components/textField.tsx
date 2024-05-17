@@ -6,13 +6,13 @@ function TextField(prop:any) {
   
 
     return (
-      <>
+      <div className="bg-[#BCB496] w-[520px] flex font-lumanosimo  ">
        <br/>
-       <p  className="bg-[#BCB496] whitespace-pre font-lumanosimo ">
+       <p  className="whitespace-pre">
        {prop.Text}
        </p>
        
-      </>
+      </div>
     )
   }
   
