@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Lumanosimo";
+    font-family: "GochiHand-Regular";
     src: url("../fonts/GochiHand-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;

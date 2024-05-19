@@ -2,15 +2,16 @@ import { useState } from "react"
 import jsPDF from "jspdf";
 import './GochiHand-Regular-normal'
 function InputField(prop:any) {
-    const [Text, setText] = useState("");
+    const [Text, setText] = useState(" ");
     const [charecterCount, setCharecterCount] = useState(0);
 
     function Change(event:React.ChangeEvent<HTMLTextAreaElement>){
-      
-  
+     
+   
+            
          setCharecterCount(event.target.value.length);
          if(charecterCount<=2520){
-  
+   
        
         setText(event.target.value);
       }

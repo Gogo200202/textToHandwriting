@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      lumanosimo: ["Lumanosimo", "sans-serif"],
+      GochiHandRegular: ["GochiHand-Regular"],
     },
     extend: {},
   },
