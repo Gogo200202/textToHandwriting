@@ -2,10 +2,9 @@
 
 function TextField(prop:any) {
    // const [Text, setText] = useState("");
-      console.log(prop.Text);
+      ///console.log(prop.Text);
       let newText=prop.Text;
       if(prop.Text==""){
-    
         newText=" "
       }   
 
